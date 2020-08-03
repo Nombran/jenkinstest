@@ -3,5 +3,6 @@ def gradle(command) {
 }
 
 node {
+    checkout scm 
     gradle 'tasks'
 }
