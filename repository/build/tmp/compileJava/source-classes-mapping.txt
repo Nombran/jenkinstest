@@ -1,0 +1,24 @@
+com/epam/esm/certificate/CertificateParamWrapper.java
+ com.epam.esm.certificate.CertificateParamWrapper
+com/epam/esm/order/OrderDao.java
+ com.epam.esm.order.OrderDao
+com/epam/esm/certificate/Certificate.java
+ com.epam.esm.certificate.Certificate
+com/epam/esm/user/UserDao.java
+ com.epam.esm.user.UserDao
+com/epam/esm/tag/Tag.java
+ com.epam.esm.tag.Tag
+com/epam/esm/user/User.java
+ com.epam.esm.user.User
+com/epam/esm/tag/TagDao.java
+ com.epam.esm.tag.TagDao
+com/epam/esm/certificate/CertificateOrderBy.java
+ com.epam.esm.certificate.CertificateOrderBy
+com/epam/esm/certificate/CertificateDao.java
+ com.epam.esm.certificate.CertificateDao
+com/epam/esm/certificate/CertificateStatus.java
+ com.epam.esm.certificate.CertificateStatus
+com/epam/esm/order/Order.java
+ com.epam.esm.order.Order
+com/epam/esm/user/Role.java
+ com.epam.esm.user.Role
