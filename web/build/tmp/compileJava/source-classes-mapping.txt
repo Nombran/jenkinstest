@@ -4,10 +4,10 @@ com/epam/esm/tag/TagHateoasUtil.java
  com.epam.esm.tag.TagHateoasUtil
 com/epam/esm/handler/ErrorResponse.java
  com.epam.esm.handler.ErrorResponse
-com/epam/esm/jwt/JwtTokenFilter.java
- com.epam.esm.jwt.JwtTokenFilter
-com/epam/esm/certificate/CertificateHateoasUtil.java
- com.epam.esm.certificate.CertificateHateoasUtil
+com/epam/esm/app/Application.java
+ com.epam.esm.app.Application
+com/epam/esm/order/OrderController.java
+ com.epam.esm.order.OrderController
 com/epam/esm/order/OrderHateoasUtil.java
  com.epam.esm.order.OrderHateoasUtil
 com/epam/esm/jwt/JwtConfigurer.java
@@ -20,11 +20,11 @@ com/epam/esm/user/UserController.java
  com.epam.esm.user.UserController
 com/epam/esm/authentication/AuthenticationController.java
  com.epam.esm.authentication.AuthenticationController
-com/epam/esm/order/OrderController.java
- com.epam.esm.order.OrderController
-com/epam/esm/app/Application.java
- com.epam.esm.app.Application
 com/epam/esm/certificate/CertificateController.java
  com.epam.esm.certificate.CertificateController
 com/epam/esm/tag/TagController.java
  com.epam.esm.tag.TagController
+com/epam/esm/jwt/JwtTokenFilter.java
+ com.epam.esm.jwt.JwtTokenFilter
+com/epam/esm/certificate/CertificateHateoasUtil.java
+ com.epam.esm.certificate.CertificateHateoasUtil

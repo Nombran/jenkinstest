@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.epam.esm.tag.TagServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-08-04T08:32:06" hostname="nombran-Lenovo-ideapad-100-15IBD" time="1.171">
+  <properties/>
+  <testcase name="create_nonexistentTag_shouldReturnTagWithId()" classname="com.epam.esm.tag.TagServiceTest" time="1.097"/>
+  <testcase name="delete_existentTag_shouldCallDaoDelete()" classname="com.epam.esm.tag.TagServiceTest" time="0.015"/>
+  <testcase name="delete_nonexistentTag_shouldThrowException()" classname="com.epam.esm.tag.TagServiceTest" time="0.009"/>
+  <testcase name="findTags_defaultParams_shouldReturnCorrectPageMetadata()" classname="com.epam.esm.tag.TagServiceTest" time="0.014"/>
+  <testcase name="findTagsByCertificateId_nonexistentId_shouldThrowException()" classname="com.epam.esm.tag.TagServiceTest" time="0.007"/>
+  <testcase name="create_nonexistentTag_shouldCallDaoCreate()" classname="com.epam.esm.tag.TagServiceTest" time="0.008"/>
+  <testcase name="find_existentTag_shouldReturnTag()" classname="com.epam.esm.tag.TagServiceTest" time="0.005"/>
+  <testcase name="find_nonexistentTag_shouldThrowException()" classname="com.epam.esm.tag.TagServiceTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -44,11 +44,11 @@ com/epam/esm/tag/TagNotFoundException.java
  com.epam.esm.tag.TagNotFoundException
 com/epam/esm/certificate/CertificateDtoMapper.java
  com.epam.esm.certificate.CertificateDtoMapper
-com/epam/esm/order/OrderConflictException.java
- com.epam.esm.order.OrderConflictException
+com/epam/esm/certificate/CertificateService.java
+ com.epam.esm.certificate.CertificateService
 com/epam/esm/tag/TagDto.java
  com.epam.esm.tag.TagDto
 com/epam/esm/jwt/JwtTokenProvider.java
  com.epam.esm.jwt.JwtTokenProvider
-com/epam/esm/certificate/CertificateService.java
- com.epam.esm.certificate.CertificateService
+com/epam/esm/order/OrderConflictException.java
+ com.epam.esm.order.OrderConflictException

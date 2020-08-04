@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.epam.esm.certificate.CertificateServiceTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-08-04T08:32:07" hostname="nombran-Lenovo-ideapad-100-15IBD" time="0.673">
+  <properties/>
+  <testcase name="addCertificateTag_existentTag_shouldThrowException()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.01"/>
+  <testcase name="update_activeCertificate_shouldThrowConflictException()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.013"/>
+  <testcase name="update_certificateWithNonUniqueName_shouldThrowConflictException()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.009"/>
+  <testcase name="update_inactiveCertificate_shouldThrowConflictException()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.007"/>
+  <testcase name="findCertificates_defaultParams_shouldReturnCorrectPageMetadata()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.01"/>
+  <testcase name="create_certificateWithTags_shouldReturnCertificateWithId()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.012"/>
+  <testcase name="addCertificateTag_nonPublishedCertificate_shouldThrowException()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.004"/>
+  <testcase name="patch_invalidName_shouldThrowException()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.523"/>
+  <testcase name="create_certificateWithTags_shouldThrowConflictException()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.002"/>
+  <testcase name="patch_correctCertificateChanges_shouldCallDaoUpdate()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.042"/>
+  <testcase name="patch_certificateWithNonexistentId_shouldThrowException()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.003"/>
+  <testcase name="find_NonexistentCertificateId_shouldThrowException()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.004"/>
+  <testcase name="addCertificateTag_newTag_shouldCallDaoUpdate()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.004"/>
+  <testcase name="create_certificateWithTags_shouldCallDaoCreateMethod()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.008"/>
+  <testcase name="update_publishedCertificateWithTags_shouldCallDaoUpdate()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.005"/>
+  <testcase name="deleteCertificateTag_existentCertificateTag_shouldDeleteTag()" classname="com.epam.esm.certificate.CertificateServiceTest" time="0.005"/>
+  <system-out><![CDATA[11:32:08.073 [Test worker] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+11:32:08.081 [Test worker] INFO org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+11:32:08.092 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+11:32:08.094 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+11:32:08.095 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+11:32:08.095 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+11:32:08.105 [Test worker] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+11:32:08.107 [Test worker] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+11:32:08.138 [Test worker] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+11:32:08.254 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+11:32:08.260 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+11:32:08.260 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+11:32:08.260 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+11:32:08.260 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+11:32:08.261 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+11:32:08.431 [Test worker] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator - ValidationMessages not found.
+11:32:08.432 [Test worker] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator - ContributorValidationMessages not found.
+11:32:08.435 [Test worker] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator - org.hibernate.validator.ValidationMessages found.
+11:32:08.456 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+11:32:08.456 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+11:32:08.457 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+11:32:08.457 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+11:32:08.457 [Test worker] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+11:32:08.457 [Test worker] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+11:32:08.458 [Test worker] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+11:32:08.460 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+11:32:08.461 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+11:32:08.462 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+11:32:08.462 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+11:32:08.462 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+11:32:08.463 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
