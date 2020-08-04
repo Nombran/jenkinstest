@@ -1,12 +1,8 @@
-def gradle(command) {
-    sh "./gradlew ${command}"
-}
-
 pipeline {
     agent any
 
     stages {
-    	stage('checkout') {
+    	stage('Checkout') {
     	    steps {
     		 checkout scm 
             }
@@ -22,4 +18,8 @@ pipeline {
             }
         }
     }
+}
+
+def gradle(command) {
+    sh "./gradlew ${command}"
 }
