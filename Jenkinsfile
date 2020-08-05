@@ -9,7 +9,7 @@ pipeline {
     	}
         stage('Build') {
             steps {
-                sh "./gradlew -Dskip.tests build"
+                sh "./gradlew build -x test"
             }
         }
         stage('Test') {

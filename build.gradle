@@ -31,6 +31,11 @@ subprojects {
         }
     }
 
+    jacoco {
+        toolVersion = "0.8.5"
+        reportsDir = file("$buildDir/JacocoReport")
+    }
+
     repositories {
         mavenCentral()
     }
@@ -39,7 +44,7 @@ subprojects {
         properties {
             property "sonar.projectName", "Java :: Rest Api :: SonarQube Scanner for Gradle"
             property "sonar.projectKey", "org.epam.esm:jenkinstask"
-            property "sonar.jacoco.reportPath", "${project.buildDir}/jacoco/test.exec"
+          //  property "sonar.jacoco.reportPath", "${project.buildDir}/jacoco/test.exec"
         }
     }
 
