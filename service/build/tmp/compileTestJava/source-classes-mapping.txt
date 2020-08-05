@@ -1,8 +1,0 @@
-com/epam/esm/tag/TagServiceTest.java
- com.epam.esm.tag.TagServiceTest
-com/epam/esm/user/UserServiceTest.java
- com.epam.esm.user.UserServiceTest
-com/epam/esm/certificate/CertificateServiceTest.java
- com.epam.esm.certificate.CertificateServiceTest
-com/epam/esm/order/OrderServiceTest.java
- com.epam.esm.order.OrderServiceTest

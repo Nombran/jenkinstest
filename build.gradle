@@ -1,6 +1,18 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.ajoberstar:gradle-jacoco:0.1.0'
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.0"
+    }
+}
+
 plugins {
     id 'io.franzbecker.gradle-lombok' version '1.14'
     id 'org.springframework.boot' version '2.3.1.RELEASE'
+    id "org.sonarqube" version "2.7"
+    id 'jacoco'
 }
 
 subprojects {
@@ -10,9 +22,25 @@ subprojects {
     apply plugin: 'java'
     apply plugin: 'io.spring.dependency-management'
     apply plugin: 'java-library'
+    apply plugin: 'org.sonarqube'
+    apply plugin: 'jacoco'
+
+    sonarqube {
+        properties {
+//            property "sonar.sources", "src"
+        }
+    }
 
     repositories {
         mavenCentral()
+    }
+
+    sonarqube {
+        properties {
+            property "sonar.projectName", "Java :: Rest Api :: SonarQube Scanner for Gradle"
+            property "sonar.projectKey", "org.epam.esm:jenkinstask"
+            property "sonar.jacoco.reportPath", "${project.buildDir}/jacoco/test.exec"
+        }
     }
 
     dependencies {
@@ -25,7 +53,6 @@ subprojects {
         implementation group: 'org.hibernate.validator', name: 'hibernate-validator-annotation-processor', version: '6.1.5.Final'
         testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.3.3'
         testImplementation group: 'org.mockito', name: 'mockito-inline', version: '3.3.3'
-
     }
 
     wrapper {

@@ -1,6 +1,0 @@
-com/epam/esm/tag/TagDaoTest.java
- com.epam.esm.tag.TagDaoTest
-com/epam/esm/certificatetag/CertificateTagDaoTest.java
- com.epam.esm.certificatetag.CertificateTagDaoTest
-com/epam/esm/certificate/CertificateDaoTest.java
- com.epam.esm.certificate.CertificateDaoTest
