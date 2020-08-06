@@ -19,8 +19,12 @@ pipeline {
         }
         stage('SonarQube') {
            steps {
-               sh "./gradlew sonarqube -Dsonar.projectKey=org.epam.esm:jenkinstask -Dsonar.host.url=http://127.0.0.1:9000 -Dsonar.login=f3fa9b42269249a12ef08010a4a969c9eca0ac87"
-           }
+               sh "./gadlew sonarqube -Dsonar.projectKey=org.epam.esm:jenkinstask -Dsonar.host.url=http://127.0.0.1:9000 -Dsonar.login=f3fa9b42269249a12ef08010a4a969c9eca0ac87"
+                def qualityGate = waitForQualityGate()
+                if (qualityGate.status != "OK") {
+                    error "Pipeline aborted due to quality gate coverage failure: ${qualityGate.status}"
+                }
+            }
         }
     }
 }
